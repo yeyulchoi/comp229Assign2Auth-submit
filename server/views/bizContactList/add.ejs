@@ -1,0 +1,53 @@
+<%- include ('../partials/header') %>
+
+
+<!--Contnent for the Add page-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+        <h1><%= title %></h1>
+
+        <form class="form" method="POST">
+           
+            <div class="form-group">
+                <label for="nameTextField">Client's Name</label>
+                <span>
+                <input type="text" height="20" class="form-control" id="nameTextField" placeholder="Enter Client Name" name="username"
+                required>
+            </span>
+            </div>
+
+            <div class="form-group">
+                <label for="authorTextField">Phone Number</label>
+                <input type="text" class="form-control" id="authorTextField" placeholder="Enter the Phone Number" name="phonenumber" 
+                required>
+            </div>
+        
+            <div class="form-group">
+                <label for="publishedTextField">Email Address</label>
+                <input type="text" class="form-control" id="publishedTextField" placeholder="Enter the Email Address" name="email"
+                 required>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="priceTextField">Age</label>
+                <input type="text" class="form-control" id="priceTextField" placeholder="Enter the start date" name="age" 
+                required>
+            </div>
+             
+            <button class="btn btn-primary">
+                <i class="fas fa-edit"></i> Submit </button>
+
+                <a href="/biz-contact" class="btn btn-warning">
+                    <i class="fas fa-undo"></i>Cancel</a>
+                   
+ 
+        </form>
+    </div>
+
+    </div>
+
+</div>
+
+<%- include ('../partials/footer') %>

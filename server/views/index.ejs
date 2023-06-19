@@ -1,0 +1,30 @@
+<%- include ('partials/header') %>
+
+  <!--Main Content-->
+  <main class="container">
+    <div class="container-fluid bg-light p-5">
+      <h1 class="display-4"><%= title %></h1>
+      <p class="lead">Welcome to <%= title %></p>
+      <hr class="my-4">
+
+ <% posts.forEach(element => { %>
+  <div class="container-redirect" width="200">
+    <div class="item">
+        <h2><%=element.fullname%></h2>
+        <p><%=element.contactNum%></p>
+        <p><%=element.email%></p>
+        <p><%=element.msg%></p>
+    </div>
+  </div>
+
+
+
+  <%}) %> 
+
+        
+
+  </div>
+  
+</main>
+
+  <%- include ('partials/footer') %>

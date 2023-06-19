@@ -1,0 +1,40 @@
+<%- include ('../partials/header') %>
+
+
+<main class="container">
+    <div class="container-fluid bg-light p-5">
+      <h1 class="display-4"><%= title %></h1>
+      <p class="lead">Welcome to <%= title %></p>
+      <hr class="my-4">
+
+        <h1>Our Services</h1>
+            <div id="services-container">
+                <div class="service">
+                    <iframe width="290" height="315" src="https://www.youtube.com/embed/TsRBftzZsQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Amazon EC2</h3>
+                    <p>Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. </p>
+                </div>
+                <div class="service">
+                    
+                    <iframe width="290" height="315" src="https://www.youtube.com/embed/77lMCiiMilo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Amazon S3</h3>
+                    <p>
+                        Amazon Simple Storage Service (Amazon S3), provides developers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use, with a simple web service interface to store and retrieve any amount of data from anywhere on the web. With Amazon S3, you pay only for the storage you actually use. There is no minimum fee and no setup cost
+                    </p>
+                </div>
+                <div class="service">
+                    <iframe width="290" height="315" src="https://www.youtube.com/embed/fyb20oApiZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Mobile Apps</h3>
+                    <p>
+                        Simplify service-to-service connectivity, security, and monitoring with Amazon VPC Lattice. You can use Amazon VPC Lattice to facilitate cross-account and cross-VPC connectivity, as well as application layer load balancing for your workloads. Regardless of whether the underlying compute types are instances, containers, or serverless, using Amazon VPC Lattice, developers can work with native integration on the compute platform of their choice.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </main>
+
+
+
+
+        <!-- <script src="/Scripts/app.js"></script> -->
+<%- include ('../partials/footer') %>
